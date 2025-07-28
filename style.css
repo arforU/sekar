@@ -1,0 +1,122 @@
+/* Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  user-select: none;
+}
+
+body {
+  background: linear-gradient(135deg, #ffd1dc, #ffb6c1);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  color: #641e3e;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-family: 'Comic Neue', cursive;
+  font-size: 3rem;
+  color: #ff69b4;
+  text-shadow: 1px 1px 5px #e7549a;
+}
+
+header p {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 0.3rem;
+  letter-spacing: 0.06em;
+  color: #b53066;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.buttons button {
+  background: #ff85b3;
+  border: none;
+  border-radius: 40px;
+  padding: 1rem 2.2rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 5px 15px #ff85b388;
+  transition: background 0.3s ease, transform 0.25s ease;
+  position: relative;
+}
+
+.buttons button:hover {
+  background: #ff4c8d;
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px #ff4c8dcc;
+}
+
+.content {
+  max-width: 600px;
+  background: #ffe6f0;
+  border-radius: 25px;
+  padding: 2rem 3rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #7d1f47;
+  box-shadow: 0 7px 25px #ff9cc7aa;
+  text-align: center;
+  min-height: 140px;
+  line-height: 1.6;
+  position: relative;
+  font-family: 'Comic Neue', cursive;
+}
+
+.content::before {
+  content: "🐇";
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-size: 2.5rem;
+  opacity: 0.15;
+}
+
+footer {
+  margin-top: auto;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #b84a78;
+  letter-spacing: 0.05em;
+  padding: 1rem 0;
+  user-select: none;
+}
+
+/* Cute bunny ears on top corners */
+body::before,
+body::after {
+  content: "🐰";
+  font-size: 4rem;
+  position: fixed;
+  top: 15px;
+  opacity: 0.18;
+  user-select: none;
+}
+
+body::before {
+  left: 20px;
+  transform: rotate(-15deg);
+}
+
+body::after {
+  right: 20px;
+  transform: rotate(10deg);
+}
